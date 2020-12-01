@@ -22,12 +22,19 @@ public class DonorController {
 	@GetMapping(path="/api/v1/donors/{bloodGroup}")
 	public List<BloodDonor> findAllByBloodGroup(@PathVariable("bloodGroup") String bloodGroup){
 				
+		String name = new String("Added");
+		
+		System.out.println(name);
 		return service.findAllByBloodGroup(bloodGroup);
 		
 	}
 	//making changes to branch in GetMapping
 	@GetMapping(path="/api/v1/donors")
 	public List<BloodDonor> findAll(){
+		
+String name = new String("Added");
+		
+		System.out.println(name);
 		
 		return service.findAll();	}
 	
