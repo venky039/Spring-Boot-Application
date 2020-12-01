@@ -43,5 +43,9 @@ String name = new String("Added");
 		return service.add(donor);
 	}
 	
+	//Changed by Sundar
+	public BloodDonor addFromSundar(BloodDonor donor) {
+		return service.add(donor);
+	}
 
 }
